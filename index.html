@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Projet Crimes et Châtiments</title>
+        <link rel="stylesheet" href="feuilledestyle.css"> 
+        <link rel="stylesheet" href="caroussel.css"> 
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <!-- <img id="logo" src="http://aaeb.ch/htdocs/images/header.jpg"/> -->
+            <img id="logo" src="photos/logo_bis.png"/>
+            <nav id="primary_nav_wrap">
+            <ul>
+                <li class="current-menu-item"><a href="#">Accueil</a></li>
+                <li><a href="#">Description du projet</a></li>
+                <li><a href="#">Ressources</a>
+                    <ul>
+                        <li><a href="#">Modèles HTR</a></li>
+                        <li><a href="#">Base de données: sorcières</a></li>
+                        <li><a href="#">Médiation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accéder aux sources</a>
+                    <ul>
+                        <li><a href="#">Lire les sources</a></li>
+                        <li><a href="#">Infographie</a>
+                    </ul>
+                </li>
+                <li><a href="#">Liens</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!--<h1>Crimes et châtiments: <br/>un projet autour des procédures criminelles</h1>-->
+            <div style="text-align: center; height:200px;line-height: 200px;">
+                <img src="photos/logo.png"/>
+           </div>
+           
+                <div>
+                    <div class="carousel">
+                      <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="http://www.aaeb.ch/htdocs/Images/Pictures/Pages/DiversdocumentsMoyenAge.jpg">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="http://www.aaeb.ch/htdocs/Images/Pictures/plan/plan.gif">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                          <div class="slide-image">
+                            <img src="http://www.aaeb.ch/htdocs/Images/Pictures/Images_taille_par_defaut/2roggenbourgresize1233235852129.jpg">
+                          </div>
+                          <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                              <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                              <span>&rsaquo;</span>
+                            </label>
+                          </div>
+                        </li>
+                        <div class="carousel-dots">
+                          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+
+
+        </div>
+
+        <footer>
+            <p>Archives de l'ancien Évêché de Bâle – <a href="mailto:jean-claude.rebetez@aaeb.ch">Nous écrire</a></p>
+            <p>2022 - Tous droits réservés.</p>
+
+        </footer>
+    </body>
+</html>

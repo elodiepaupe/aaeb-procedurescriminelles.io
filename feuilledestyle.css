@@ -1,0 +1,181 @@
+/* Tout le document */ 
+html{
+    max-width:1000px;
+    margin: auto;
+    font-family: Verdana, Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+}
+
+/* Menu principal */
+
+body{
+   
+}
+
+#primary_nav_wrap
+{
+	margin-top:15px;
+    display: flex; 
+    height: 50px;
+    float:right; 
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:auto 0;
+    height: 50px; 
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    height: 50px;
+    margin:auto;
+}
+
+#primary_nav_wrap ul li:hover a
+{
+	background: rgb(73 135 212);
+    color: #fafafa;
+}
+
+#primary_nav_wrap ul li a
+{
+	height: 50px;
+    line-height: 50px;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px; 
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:100%;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+#primary_nav_wrap ul li ul li a
+{
+	height: 50px;
+    line-height: 50px;
+}
+
+#primary_nav_wrap ul li ul li:hover a
+{
+	background: #fafafa;
+    color: grey;
+    border: 1px solid grey;
+}
+
+/* Corps de texte */
+
+body{
+    background-color:#fafafa;
+    color:grey;
+}
+
+h2{
+    font-size:large;
+	letter-spacing: 3px;
+    line-height: 50px;
+}
+
+h3{
+    font-size:large;
+    line-height: 20px;
+}
+
+a, .title{
+    color:grey;
+}
+
+/* Images et médias */
+
+figure{
+    margin:auto;
+}
+
+img{
+    max-width: 500px; 
+}
+
+figcaption{
+   color: rgb(73 135 212);
+   font-style: italic;
+   font-size: xx-small;
+}
+
+iframe{
+    margin: 15px 0;
+}
+
+/* En-tête */ 
+
+h1{
+    display: block;
+    height: 150px;
+    color: rgb(73 135 212);
+    font-size:xx-large;
+	letter-spacing: 3px;
+    padding: auto 0;
+}
+
+#logo{
+    display: block;
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 0px;
+}
+
+/* Pied de page */
+
+footer{
+    font-size: x-small;
+    text-align: center;
+    margin-top: 2cm;
+}
