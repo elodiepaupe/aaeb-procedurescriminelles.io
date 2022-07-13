@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/brands.min.css');
+
+
+/*Mise en forme du tableau*/
+table {
+    border-collapse: collapse;
+    margin: 0;
+    text-align: center;
+    font-size: small;
+}
+
+/*Création des cases du tableau*/
+th, td {
+    border: 1px solid black;
+}
+
+/*Couleur du thead et du tfoot*/
+thead, tfoot {
+    background: white;
+}
+
+/*Colorier une ligne sur deux du tableau*/
+tbody tr:nth-child(odd) {
+    background: lightgray;
+}
