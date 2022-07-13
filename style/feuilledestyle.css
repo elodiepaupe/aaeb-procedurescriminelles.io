@@ -127,27 +127,38 @@ h1{
 	letter-spacing: 3px;
     padding: auto 0;
     margin-top: 50px;
+    font-weight:bold;
 }
 
 h2{
-    font-size:large;
-	letter-spacing: 3px;
-    line-height: 50px;
+    font-size:larger;
+    font-weight:bold;
+
 }
 
 h3{
-    font-size:large;
+    font-size:medium;
     line-height: 20px;
+    color: rgb(73 135 212);
+    font-weight:bold;
+    line-height: 40px;
 }
 
-a, .title{
-    color:grey;
+a{
+    color: rgb(73 135 212);
 }
 
 /* Images et médias */
 
+aside {
+    width: 100%; /* use the required width for image here */
+  }
+
 figure{
+    max-width: 500px;
     margin:auto;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 img{
@@ -157,7 +168,8 @@ img{
 figcaption{
    color: rgb(73 135 212);
    font-style: italic;
-   font-size: xx-small;
+   font-size: small;
+   text-align: left;
 }
 
 iframe{
