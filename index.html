@@ -2,8 +2,8 @@
 <html lang="fr">
     <head>
         <title>Projet Crimes et Châtiments</title>
-        <link rel="stylesheet" href="feuilledestyle.css"> 
-        <link rel="stylesheet" href="caroussel.css"> 
+        <link rel="stylesheet" href="style/feuilledestyle.css"> 
+        <link rel="stylesheet" href="style/caroussel.css"> 
         <script src="script.js"></script>
         <meta charset="UTF-8">
         <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -13,13 +13,15 @@
     </head>
 
     <body>
+        <!-- Menus -->
         <header>
-            <!-- <img id="logo" src="http://aaeb.ch/htdocs/images/header.jpg"/> -->
-            <img id="logo" src="photos/logo_bis.png"/>
+            <!-- En-tête du site des aaeb: 
+              <img id="logo" src="http://aaeb.ch/htdocs/images/header.jpg"/> -->
+            <a href="index.html"><img id="logo" src="photos/logo_bis.png"/></a>
             <nav id="primary_nav_wrap">
             <ul>
-                <li class="current-menu-item"><a href="#">Accueil</a></li>
-                <li><a href="#">Description du projet</a></li>
+                <li class="current-menu-item"><a href="index.html">Accueil</a></li>
+                <li><a href="description_projet.html">Description du projet</a></li>
                 <li><a href="#">Ressources</a>
                     <ul>
                         <li><a href="#">Modèles HTR</a></li>
@@ -38,12 +40,12 @@
             </nav>
         </header>
 
+        <!-- Début de la page. -->
         <div>
-            <!--<h1>Crimes et châtiments: <br/>un projet autour des procédures criminelles</h1>-->
             <div style="text-align: center; height:200px;line-height: 200px;">
                 <img src="photos/logo.png"/>
            </div>
-           
+                <!-- Carrousel d'images: code repris ici https://codepen.io/ancaspatariu/pen/WpQYOP -->
                 <div>
                     <div class="carousel">
                       <ul class="slides">
