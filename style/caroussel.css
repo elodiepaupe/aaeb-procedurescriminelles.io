@@ -6,10 +6,9 @@
 ul.slides {
     display: block;
     position: relative;
-    height: 600px;
+    height: 500px;
     margin: 0;
     padding: 0;
-    overflow:scroll;
     list-style: none;
 }
 
@@ -45,7 +44,7 @@ ul.slides input {
 .slide-image figure {
     width: auto;
     min-width: auto;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,7 +103,7 @@ ul.slides input {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgb(73 135 212);
     opacity: 0.5;
     margin: 10px;
 }
