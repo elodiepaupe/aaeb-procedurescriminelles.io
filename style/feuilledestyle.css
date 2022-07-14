@@ -18,6 +18,7 @@ header{
     display:-webkit-inline-flex; 
     height: 50px;
     float:right; 
+    background-color: inherit;
 }
 
 #primary_nav_wrap ul
@@ -212,7 +213,7 @@ footer{
     font-size: x-small;
     text-align: center;
     margin-top: 2cm;
-    position: fixed;
+    position:sticky;
     left: 0;
     bottom: 0;
     width: 100%;
