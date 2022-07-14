@@ -9,7 +9,7 @@ html{
 /* Menu principal */
 
 header{
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 #primary_nav_wrap
@@ -117,6 +117,7 @@ header{
 body{
     background-color:#fafafa;
     color:grey;
+    overflow-x:scroll;
 }
 
 h1{
@@ -211,4 +212,8 @@ footer{
     font-size: x-small;
     text-align: center;
     margin-top: 2cm;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
