@@ -1,6 +1,6 @@
 /* Tout le document */ 
 html{
-    max-width:1200px;
+    max-width:1000px;
     min-width: 650px;
     margin: auto;
     font-family: Verdana, Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
@@ -172,6 +172,15 @@ figure{
 
 img{
     max-width: 500px; 
+}
+/*
+img:hover{
+    -webkit-transform: scale(2,2);
+}
+*/
+.intext{
+    width:400px;
+    margin:10px;
 }
 
 figcaption{

@@ -6,7 +6,7 @@
 ul.slides {
     display: block;
     position: relative;
-    height: 400px;
+    height: 600px;
     margin: 0;
     padding: 0;
     overflow:scroll;
@@ -42,7 +42,7 @@ ul.slides input {
     text-align: center;
 }   
 
-.slide-image img {
+.slide-image figure {
     width: auto;
     min-width: auto;
     height: 100%;
