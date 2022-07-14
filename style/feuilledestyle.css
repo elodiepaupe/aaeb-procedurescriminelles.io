@@ -157,11 +157,6 @@ button{
     margin-top: 12px;
 }
 
-button:hover{
-    background-color: rgb(73 135 212);
-    color:white;
-}
-
 /* Images et médias */
 
 aside {
