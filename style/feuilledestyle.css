@@ -1,6 +1,6 @@
 /* Tout le document */ 
 html{
-    max-width:1000px;
+    max-width:1200px;
     min-width: 650px;
     margin: auto;
     font-family: Verdana, Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
@@ -148,6 +148,20 @@ a{
     color: rgb(73 135 212);
 }
 
+.lettre{
+    font-family: 'Babylonica';
+    font-size: 30px;
+}
+
+button{
+    margin-top: 12px;
+}
+
+button:hover{
+    background-color: rgb(73 135 212);
+    color:white;
+}
+
 /* Images et médias */
 
 aside {
@@ -176,10 +190,6 @@ iframe{
     margin: 15px 0;
     width: 1000px;
     height: 500px;
-}
-
-table{
-    margin-top: 12px; 
 }
 
 /* En-tête */ 

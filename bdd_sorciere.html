@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style/feuilledestyle.css">
     <link rel="stylesheet" href="style/tableau.css">
     <link rel="stylesheet" href="style/sorcieres.css">
-    <script src="scripts/script.js"></script>
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="Free Web tutorials">
@@ -34,7 +33,7 @@
                 </li>
                 <li><a href="#">Accéder aux sources</a>
                     <ul>
-                        <li><a href="#">Lire les sources</a></li>
+                        <li><a href="lecture.html">Lire les sources</a></li>
                         <li><a href="#">Infographie</a>
                     </ul>
                 </li>
@@ -48,31 +47,37 @@
         <h2>Procès de sorcelleries et procédures criminelles: numérisation, mise en ligne et médiation</h2>
 
         <div id="tab">
-            <!-- https://gitlab.com/ErwanDelory/tableau-interactif/-/blob/master/index.html pour le tableau-->
-            <h1>Tableau des sorcières et sorciers</h1>
+            <!-- https://gitlab.com/ErwanDelory/tableau-interactif/-/blob/master/index.html pour le tableau qui n'a pas marché (impossible de trier)
+            http://www.trucsweb.com/tutoriels/javascript/tableau-tri/ pour la seconde solution testée.-->
 
-            <table id="tableau">
-                <thead class="head">
+            <h1>Tableau des sorcières et sorciers 
+                <a href="https://docs.google.com/spreadsheets/d/1upZi_r5nEYM11R6jxL08fTpgD9gfs6FnEaXVm2JdfiM/edit?usp=sharing">
+                    <button class="w3-button w3-white w3-border w3-border-blue w3-round-large w3-hover-blue " style="float:right">Télécharger le fichier</button>
+                </a>
+            </h1>
+
+            <table class="avectri tableau">
+                <thead>
                     <tr>
-                        <th>N<sup>o</sup> <a class="sortID"><i class="fas fa-sort"></i></a></th>
-                        <th>Cote <a class="sortCote"><i class="fas fa-sort"></i></a></th>
-                        <th>Nom et prénom <a class="sortNom"><i class="fas fa-sort"></i></a></th>
+                        <th width="5%" data-tri="1" class="selection" data-type="num">N<sup>o</sup></th>
+                        <th width="10%">Cote </th>
+                        <th>Nom et prénom </th>
                         <th>Complément d'identité</th>
-                        <th>Localisation <a class="sortLocalisation"><i class="fas fa-sort"></i></a></th>
-                        <th>Date <a class="sortNote"><i class="fas fa-sort"></i></a></th>
+                        <th>Localisation </th>
+                        <th width="8%">Date </th>
                         <th>Motif de condamnation </th>
                         <th>Sentence</th>
-                        <th></th>
-                        <th>Langue<a class="sortLangue"><i class="fas fa-sort"></i></a></th>
+                        <th width="20px"></th>
+                        <th width="8%">Langue</th>
                     </tr>
                 </thead>
 
-                <tbody class="test">
+                <tbody>
 
                     <tr>
-                        <th id="2095287440R1">
+                        <td id="2095287440R1">
                             <div >2</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 1</td>
                         <td>Erbel Peter</td>
                         <td></td>
@@ -86,9 +91,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R2" >
+                        <td id="2095287440R2" >
                             <div >3</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 1</td>
                         <td>Burckhardt Melchior</td>
                         <td>gewesener Wächter im Schloss Pruntrut</td>
@@ -106,9 +111,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R3" >
+                        <td id="2095287440R3" >
                             <div >4</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 2-3</td>
                         <td>Chastellain Moissenat Adrian</td>
                         <td></td>
@@ -120,9 +125,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R4" >
+                        <td id="2095287440R4" >
                             <div >5</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 3</td>
                         <td>Gérard Neze (Agnès)</td>
                         <td></td>
@@ -134,9 +139,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R5" >
+                        <td id="2095287440R5" >
                             <div >6</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 3-4</td>
                         <td>Triponel (Triponez) Adam</td>
                         <td></td>
@@ -148,9 +153,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R6" >
+                        <td id="2095287440R6" >
                             <div >7</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 4</td>
                         <td>Bidenne Pierre</td>
                         <td></td>
@@ -165,9 +170,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R7" >
+                        <td id="2095287440R7" >
                             <div >8</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 4</td>
                         <td>Reton Marguerite fille de feu Jacques</td>
                         <td></td>
@@ -179,9 +184,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R8" >
+                        <td id="2095287440R8" >
                             <div >9</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 5</td>
                         <td>Chiquet Richard</td>
                         <td></td>
@@ -195,9 +200,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R9" >
+                        <td id="2095287440R9" >
                             <div >10</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 5-6</td>
                         <td>Québatte Henry</td>
                         <td></td>
@@ -211,11 +216,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R10" >
+                        <td id="2095287440R10" >
                             <div >11</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 6</td>
-                        <td>Mojean Catherine</td>
+                        <td>Mojean Catderine</td>
                         <td></td>
                         <td> de Sonceboz</td>
                         <td>1664.02.05</td>
@@ -227,9 +232,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R11" >
+                        <td id="2095287440R11" >
                             <div >12</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 7-8</td>
                         <td>Chappatte Jean Jacques</td>
                         <td></td>
@@ -241,9 +246,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R12" >
+                        <td id="2095287440R12" >
                             <div >13</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 8</td>
                         <td>Frésard Antoine</td>
                         <td></td>
@@ -256,9 +261,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R13" >
+                        <td id="2095287440R13" >
                             <div >14</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 9</td>
                         <td>Gossin Adam</td>
                         <td></td>
@@ -270,9 +275,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R14" >
+                        <td id="2095287440R14" >
                             <div >15</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 9</td>
                         <td>Bacon Jean Pierre beau-frère de Gossin Adam</td>
                         <td></td>
@@ -286,9 +291,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R15" >
+                        <td id="2095287440R15" >
                             <div >16</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 10</td>
                         <td>Vöeblet (Voiblet) Hansoz</td>
                         <td></td>
@@ -302,9 +307,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R16" >
+                        <td id="2095287440R16" >
                             <div >17</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 10</td>
                         <td>Vöeblet (Voiblet) Magdelon femme de Hansoz</td>
                         <td></td>
@@ -318,11 +323,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R17" >
+                        <td id="2095287440R17" >
                             <div >18</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 11</td>
-                        <td>Ramser Anne femme de Caentz (Kunz) Walther</td>
+                        <td>Ramser Anne femme de Caentz (Kunz) Waltder</td>
                         <td></td>
                         <td> de Perles</td>
                         <td>1666.11.24</td>
@@ -334,11 +339,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R18" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R18" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">19</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 11</td>
-                        <td>Sütterlin Agathe</td>
+                        <td>Sütterlin Agatde</td>
                         <td></td>
                         <td> d&#39;Ederswiler</td>
                         <td>1667.03.28</td>
@@ -350,9 +355,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R19" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R19" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">20</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 12</td>
                         <td>Begueré Marguerite</td>
                         <td></td>
@@ -364,9 +369,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R20" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R20" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">21</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 12-13</td>
                         <td>Montavon Henry</td>
                         <td></td>
@@ -382,9 +387,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R21" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R21" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">22</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 13-14</td>
                         <td>Bruner Victor</td>
                         <td></td>
@@ -398,9 +403,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R22" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R22" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">23</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 14</td>
                         <td>Moser Marie</td>
                         <td></td>
@@ -414,9 +419,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R23" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R23" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">24</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 14-15</td>
                         <td>Preste Jean</td>
                         <td></td>
@@ -430,9 +435,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R24" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R24" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">25</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 15</td>
                         <td>Meister Friderich</td>
                         <td></td>
@@ -444,9 +449,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R25" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R25" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">26</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 16</td>
                         <td>Risoux Marie</td>
                         <td></td>
@@ -458,9 +463,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R26" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R26" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">27</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 16</td>
                         <td>Favergier Marie Madeleine</td>
                         <td></td>
@@ -474,9 +479,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R27" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R27" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">28</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 17</td>
                         <td>Petterhans Marie veuve de Pierre Descombes</td>
                         <td></td>
@@ -490,9 +495,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R28" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R28" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">29</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 18</td>
                         <td>Gottenkhueni Clauss</td>
                         <td></td>
@@ -506,9 +511,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R29" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R29" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">30</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 19</td>
                         <td>Heilbrunner Eva</td>
                         <td></td>
@@ -520,9 +525,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R30" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R30" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">31</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 19-21</td>
                         <td>Guenat Magdeleine femme de Moret Girardat</td>
                         <td></td>
@@ -534,9 +539,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R31" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R31" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">32</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 21-22</td>
                         <td>Maillard Jeannette femme de Noirat Richard</td>
                         <td></td>
@@ -548,9 +553,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R32" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R32" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">33</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 22-23</td>
                         <td>Des Rouilles Jean Jacques</td>
                         <td></td>
@@ -564,9 +569,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R33" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R33" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">34</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 23</td>
                         <td>Aubin</td>
                         <td></td>
@@ -580,9 +585,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R34" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R34" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">35</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 23</td>
                         <td>Huguenin Elias et Lombard Marguerite</td>
                         <td></td>
@@ -595,9 +600,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R35" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R35" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">36</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 24</td>
                         <td>Wuille Suzanne fille de Joseph</td>
                         <td></td>
@@ -609,9 +614,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R36" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R36" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">37</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 24</td>
                         <td>Rodé Henry</td>
                         <td></td>
@@ -625,9 +630,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R37" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R37" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">38</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 25</td>
                         <td>Bornot Bonaventure autrement dit Fournier Caspar</td>
                         <td></td>
@@ -640,9 +645,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R38" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R38" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">39</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 25</td>
                         <td>Cloistier Jean</td>
                         <td></td>
@@ -655,9 +660,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R39" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R39" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">40</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 25-26</td>
                         <td>Sanin Ursule</td>
                         <td></td>
@@ -671,9 +676,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R40" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R40" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">41</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 26-27</td>
                         <td>Gobat David</td>
                         <td></td>
@@ -686,9 +691,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R41" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R41" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">42</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 27</td>
                         <td>Ballichard (Belrichard) Richard fils d&#39;Abraham</td>
                         <td></td>
@@ -702,9 +707,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R42" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R42" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">43</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 27-28</td>
                         <td>Quillerat Nicolas</td>
                         <td></td>
@@ -718,9 +723,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R43" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R43" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">44</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 27</td>
                         <td>Boillat Johanna</td>
                         <td></td>
@@ -732,9 +737,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R44" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R44" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">45</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 28</td>
                         <td>Berset Jacques</td>
                         <td></td>
@@ -749,9 +754,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R45" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R45" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">46</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 28</td>
                         <td>Huguenin Elias</td>
                         <td></td>
@@ -763,9 +768,9 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R46" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R46" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">47</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 29-30</td>
                         <td>Poutier Germain</td>
                         <td></td>
@@ -781,9 +786,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R47" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R47" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">48</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 31-32</td>
                         <td>Senn Hans; Häring Martin</td>
                         <td></td>
@@ -799,9 +804,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R48" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R48" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">49</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 33</td>
                         <td>Simonin Pierre</td>
                         <td></td>
@@ -814,9 +819,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R49" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R49" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">50</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 34</td>
                         <td>Hirtz Conradt</td>
                         <td></td>
@@ -828,9 +833,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R50" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R50" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">51</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 34</td>
                         <td>Voisard Simon</td>
                         <td></td>
@@ -842,9 +847,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R51" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R51" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">52</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 35</td>
                         <td>De Mesche Ursule</td>
                         <td></td>
@@ -858,11 +863,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R52" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R52" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">53</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 35</td>
-                        <td>Peter Gueth</td>
+                        <td>Peter Guetd</td>
                         <td></td>
                         <td></td>
                         <td>1676.09.22</td>
@@ -872,9 +877,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R53" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R53" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">54</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 36</td>
                         <td>Wäber Marguerite femme de Fleury Christophe</td>
                         <td></td>
@@ -888,9 +893,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R54" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R54" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">55</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 37</td>
                         <td>Forchelette Eve et &quot;la Jeannaine&quot;</td>
                         <td></td>
@@ -908,9 +913,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R55" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R55" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">56</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 38</td>
                         <td>Guetwil Christ</td>
                         <td></td>
@@ -926,9 +931,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R56" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R56" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">57</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 39-40</td>
                         <td>Karrer Hans Jacob</td>
                         <td></td>
@@ -940,9 +945,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R57" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R57" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">58</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 41</td>
                         <td>Jobin Normand Marie</td>
                         <td></td>
@@ -956,9 +961,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R58" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R58" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">59</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 42-43</td>
                         <td>Eberhardt Jacob; Lang Hans</td>
                         <td></td>
@@ -972,9 +977,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R59" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R59" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">60</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 43-44</td>
                         <td>Schwirmer Hans; Grabe Hans; Schwan Georg; Gintrat Adam</td>
                         <td></td>
@@ -982,15 +987,15 @@
                         <td>1678.03.14</td>
                         <td>Vols réitérés méritant la peine de mort<br>Sentence: par grâce, Schwirmer paie
                             une amende de
-                            200 Reichsthaler, et les trois autres sont bannis.</td>
+                            200 Reichstdaler, et les trois autres sont bannis.</td>
                         <td></td>
                         <td></td>
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R60" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R60" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">61</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 44</td>
                         <td>Pécaut Petermand</td>
                         <td></td>
@@ -1004,9 +1009,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R61" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R61" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">62</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 45</td>
                         <td>Gorgé Abraham</td>
                         <td></td>
@@ -1020,9 +1025,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R62" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R62" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">63</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 45</td>
                         <td>Schmidlin Hans Dieboldt</td>
                         <td></td>
@@ -1034,9 +1039,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R63" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R63" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">64</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 46-47</td>
                         <td>Copin Joseph fils de feu Jean</td>
                         <td></td>
@@ -1050,9 +1055,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R64" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R64" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">65</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 47</td>
                         <td>Varrey Adam</td>
                         <td></td>
@@ -1064,9 +1069,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R65" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R65" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">66</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 48-49</td>
                         <td>Lombard Jean Baptiste</td>
                         <td></td>
@@ -1082,9 +1087,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R66" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R66" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">67</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 50</td>
                         <td>Dupré Nicolas</td>
                         <td></td>
@@ -1098,9 +1103,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R67" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R67" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">68</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 51</td>
                         <td>Chaboudez André</td>
                         <td></td>
@@ -1116,9 +1121,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R68" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R68" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">69</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 51</td>
                         <td>Faibvre Jean François</td>
                         <td></td>
@@ -1131,9 +1136,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R69" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R69" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">70</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 52</td>
                         <td>Frisch Jean le berger de Vicques</td>
                         <td></td>
@@ -1147,9 +1152,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R70" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R70" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">71</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 52-53</td>
                         <td>Broquet Annelé</td>
                         <td></td>
@@ -1163,9 +1168,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R71" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R71" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">72</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 53-54</td>
                         <td>Pierre ou Steiner Conrad</td>
                         <td></td>
@@ -1180,9 +1185,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R72" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R72" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">73</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 54</td>
                         <td>Walcker Joannes</td>
                         <td></td>
@@ -1194,11 +1199,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R73" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R73" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">74</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 54-55</td>
-                        <td>Schmidt Anthoni</td>
+                        <td>Schmidt Antdoni</td>
                         <td></td>
                         <td> von Ettingen</td>
                         <td>1682.10.03</td>
@@ -1210,9 +1215,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R74" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R74" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">75</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 55-56</td>
                         <td>Nabel Urs</td>
                         <td></td>
@@ -1226,9 +1231,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R75" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R75" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">76</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 56</td>
                         <td>Brouse Pierre dit Ragour</td>
                         <td></td>
@@ -1241,9 +1246,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R76" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R76" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">77</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 57-59</td>
                         <td>Lardon Jean; Sautebin Jacques et Etienne; Feusier Claude</td>
                         <td></td>
@@ -1260,9 +1265,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R77" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R77" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">78</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 59-60</td>
                         <td>Feusier Claudat; Sautebin Etienne et Lardon François fils de Jacques</td>
                         <td></td>
@@ -1277,11 +1282,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R78" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R78" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">79</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 61</td>
-                        <td>Gauthier Christ</td>
+                        <td>Gautdier Christ</td>
                         <td></td>
                         <td></td>
                         <td>1683.01.17</td>
@@ -1293,9 +1298,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R79" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R79" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">80</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 62-63</td>
                         <td>Chavanne Jean dit Mareschal</td>
                         <td></td>
@@ -1309,9 +1314,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R80" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R80" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">81</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 63-65</td>
                         <td>Monnier Suzanne</td>
                         <td></td>
@@ -1327,9 +1332,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R81" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R81" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">82</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 65</td>
                         <td>Berberat Christat</td>
                         <td></td>
@@ -1343,9 +1348,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R82" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R82" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">83</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 66-67</td>
                         <td>Bojeanquet serviteur des sieurs Trembley marchands de Genève</td>
                         <td></td>
@@ -1358,9 +1363,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R83" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R83" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">84</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 67-68</td>
                         <td>Corbat Jacques</td>
                         <td></td>
@@ -1374,9 +1379,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R84" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R84" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">85</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 68-70</td>
                         <td>Monbaron Madeleine fille d&#39;Abraham</td>
                         <td></td>
@@ -1390,11 +1395,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R85" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R85" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">86</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 70</td>
-                        <td>Borle Judith</td>
+                        <td>Borle Juditd</td>
                         <td></td>
                         <td> de Renan</td>
                         <td>1685.06.15</td>
@@ -1404,15 +1409,15 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R86" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R86" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">87</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 71-72</td>
-                        <td>Roth Hans</td>
+                        <td>Rotd Hans</td>
                         <td></td>
-                        <td> von Hubersdorf (Kanton Solothurn)</td>
+                        <td> von Hubersdorf (Kanton Solotdurn)</td>
                         <td>1685.07.30</td>
-                        <td>Vol (Roth était le serviteur de Georg Alban Mayer von Mayersheim, chanoine du
+                        <td>Vol (Rotd était le serviteur de Georg Alban Mayer von Mayersheim, chanoine du
                             haut chapitre
                             de Bâle, décédé en 1684)<br>Sentence: mort (par grâce, le glaive remplacera la corde)</td>
                         <td></td>
@@ -1420,9 +1425,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R87" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R87" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">88</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 72-73</td>
                         <td>Henry Pierre le jeune; et Pécaut Marguerite de Sonceboz</td>
                         <td></td>
@@ -1436,9 +1441,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R88" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R88" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">89</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 74-75</td>
                         <td>Pétremand Jean fils de Richard</td>
                         <td></td>
@@ -1452,9 +1457,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R89" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R89" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">90</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 75-76</td>
                         <td>Monnier Marguerite</td>
                         <td></td>
@@ -1467,9 +1472,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R90" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R90" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">91</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 76-78</td>
                         <td>Fuchs Georg</td>
                         <td></td>
@@ -1482,9 +1487,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R91" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R91" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">92</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 78-79</td>
                         <td>Galle Pierre</td>
                         <td></td>
@@ -1498,9 +1503,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R92" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R92" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">93</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 80-83</td>
                         <td>Bourgeois Jean Jacques</td>
                         <td></td>
@@ -1522,9 +1527,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R93" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R93" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">94</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 83-84</td>
                         <td>Linzen Christian</td>
                         <td></td>
@@ -1538,9 +1543,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R94" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R94" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">95</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 85-86</td>
                         <td>Gendre Gratian</td>
                         <td></td>
@@ -1555,9 +1560,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R95" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R95" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">96</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 86-87</td>
                         <td>Bourquin Abraham</td>
                         <td></td>
@@ -1572,9 +1577,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R96" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R96" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">97</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 87-89</td>
                         <td>Etienne Adam fils d&#39;Abraham</td>
                         <td></td>
@@ -1586,9 +1591,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R97" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R97" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">98</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 89-91</td>
                         <td>Vuilmenot Jean</td>
                         <td></td>
@@ -1605,9 +1610,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R98" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R98" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">99</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 91-92</td>
                         <td>Regenal Jean Pierre</td>
                         <td></td>
@@ -1622,9 +1627,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R99" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R99" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">100</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 92-94</td>
                         <td>Haydt Hans Jacob</td>
                         <td></td>
@@ -1638,9 +1643,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R100" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R100" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">101</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 95</td>
                         <td>Maillat Joseph</td>
                         <td></td>
@@ -1653,15 +1658,15 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R101" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R101" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">102</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 96-102</td>
                         <td>Stramm Anna Maria veuve de Niederhäuser Vehlin et consorts</td>
                         <td></td>
                         <td></td>
                         <td>1692.06.02</td>
-                        <td>Vols<br>Outre Anna Maria Stramm, sont encore accusées: Catharina Einmatten, de
+                        <td>Vols<br>Outre Anna Maria Stramm, sont encore accusées: Catdarina Einmatten, de
                             l&#39;Emmental; Verena Rott, femme de Peter Gros, native de la région de Berne; Anna
                             Görschy, femme du
                             fugitif Wilhelm Tilly; Maria Tieschin, femme de Heinrich Baumann; Barbara Tubs; Maria
@@ -1672,9 +1677,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R102" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R102" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">103</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 103-104</td>
                         <td>Tièche Suzanne</td>
                         <td></td>
@@ -1687,9 +1692,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R103" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R103" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">104</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 105-107</td>
                         <td>Müller Hans Heinrich</td>
                         <td></td>
@@ -1708,9 +1713,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R104" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R104" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">105</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 109-110</td>
                         <td>Oster François fils de Jean</td>
                         <td></td>
@@ -1724,9 +1729,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R105" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R105" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">106</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 108</td>
                         <td>De Casays Jeanne femme d&#39;un soldat nommé la Croix</td>
                         <td></td>
@@ -1740,9 +1745,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R106" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R106" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">107</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 111</td>
                         <td>Vouille (Vuille) Adam</td>
                         <td></td>
@@ -1756,9 +1761,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R107" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R107" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">108</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 112-114</td>
                         <td>Schweytzer Christ; Scherer Jacob Hans</td>
                         <td></td>
@@ -1770,9 +1775,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R108" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R108" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">109</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 115</td>
                         <td>Müller Claus</td>
                         <td></td>
@@ -1786,9 +1791,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R109" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R109" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">110</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 116-117</td>
                         <td>Bajol Jean ménétrier</td>
                         <td></td>
@@ -1801,9 +1806,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R110" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R110" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">111</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 118-119</td>
                         <td>Böhm Hans Jacob</td>
                         <td></td>
@@ -1815,9 +1820,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R111" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R111" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">112</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 121-123</td>
                         <td>Vismüller Steff</td>
                         <td></td>
@@ -1830,13 +1835,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R112" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R112" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">113</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 125-127</td>
                         <td>Wullenschneider Lienardt</td>
                         <td></td>
-                        <td> von Burgthal (Burg im Leimental)</td>
+                        <td> von Burgtdal (Burg im Leimental)</td>
                         <td>1694.03.12</td>
                         <td>Vols<br>Sentence (par contumace): galères (10 ans)</td>
                         <td></td>
@@ -1844,9 +1849,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R113" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R113" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">114</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 128</td>
                         <td>Vauterè (Vautrey?) Hansele</td>
                         <td></td>
@@ -1860,9 +1865,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R114" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R114" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">115</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 129-130</td>
                         <td>Cain Abraham</td>
                         <td></td>
@@ -1876,9 +1881,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R115" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R115" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">116</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 131</td>
                         <td>Süterle Hans und Zeündin Jacob</td>
                         <td></td>
@@ -1886,7 +1891,7 @@
                         <td>1694.12.16</td>
                         <td>Vol de grain, la nuit, dans le moulin d&#39;Oberwil<br>Sentence: - Süterle:
                             amende (100
-                            thalers), bannissement de l&#39;Evêché pour trois ans - Zeündin: prison (3 jours), amende
+                            tdalers), bannissement de l&#39;Evêché pour trois ans - Zeündin: prison (3 jours), amende
                             (30
                             livres)<br>L&#39;évêque leur a fait grâce de l&#39;exposition publique à l&#39;église
                             d&#39;Arlesheim.
@@ -1896,9 +1901,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R116" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R116" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">117</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 132</td>
                         <td>Feürman Hans Jacob</td>
                         <td></td>
@@ -1916,9 +1921,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R117" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R117" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">118</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 133-134</td>
                         <td>Luz Hans und Simon Martin</td>
                         <td></td>
@@ -1934,9 +1939,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R118" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R118" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">119</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 135</td>
                         <td>Thevenot Joseph</td>
                         <td></td>
@@ -1951,9 +1956,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R119" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R119" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">120</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 136-140</td>
                         <td>Lardon David</td>
                         <td></td>
@@ -1969,9 +1974,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R120" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R120" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">121</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 140</td>
                         <td>Billechoz Joseph fils de Richard</td>
                         <td></td>
@@ -1985,9 +1990,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R121" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R121" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">122</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 143-144</td>
                         <td>Henzi Bendichtli Eheweib von Kiener Adam</td>
                         <td></td>
@@ -2001,11 +2006,11 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R122" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R122" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">123</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 145</td>
-                        <td>De Roche Catherine fille d&#39;Abraham et femme de de Roche Jean</td>
+                        <td>De Roche Catderine fille d&#39;Abraham et femme de de Roche Jean</td>
                         <td></td>
                         <td></td>
                         <td>1696.07.03</td>
@@ -2017,26 +2022,26 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R123" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R123" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">124</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 146-147</td>
                         <td>De Roche Jean Jacques</td>
                         <td></td>
                         <td></td>
                         <td>1696.07.03</td>
-                        <td>Inceste avec sa belle-soeur Catherine, femme de Jean de Roche, puis avec sa nièce
+                        <td>Inceste avec sa belle-soeur Catderine, femme de Jean de Roche, puis avec sa nièce
                             Elsoz,
-                            fille de Catherine et de Jean<br>Sentence (exécutée à Delémont le 7 juillet): mort
+                            fille de Catderine et de Jean<br>Sentence (exécutée à Delémont le 7 juillet): mort
                             (décapitation)</td>
                         <td></td>
                         <td></td>
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R124" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R124" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">125</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 148-149</td>
                         <td>Cuttat Jean fils de feu Arnold</td>
                         <td></td>
@@ -2052,9 +2057,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R125" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R125" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">126</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 150</td>
                         <td>Aubry Madeleine</td>
                         <td></td>
@@ -2068,9 +2073,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R126" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R126" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">127</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 151-152</td>
                         <td>Bardot Hans Henry</td>
                         <td></td>
@@ -2086,9 +2091,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R127" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R127" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">128</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 153-154</td>
                         <td>Cattin Jean François</td>
                         <td></td>
@@ -2104,9 +2109,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R128" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R128" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">129</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 155-156</td>
                         <td>Schiby Michel</td>
                         <td></td>
@@ -2123,9 +2128,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R129" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R129" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">130</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 157-158</td>
                         <td>Schiby Nicolas fils de Michel de Wimmis (canton de Berne)</td>
                         <td></td>
@@ -2141,9 +2146,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R130" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R130" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">131</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 159-162</td>
                         <td>Rheinhardt Johannes</td>
                         <td></td>
@@ -2159,9 +2164,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R131" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R131" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">132</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 162</td>
                         <td>Theuvenat Claude et Thiebot Gabriele</td>
                         <td></td>
@@ -2175,9 +2180,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R132" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R132" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">133</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 162</td>
                         <td>Kesseler Frantz</td>
                         <td></td>
@@ -2191,9 +2196,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R133" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R133" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">134</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 163-164</td>
                         <td>Bertschy Heinrich</td>
                         <td></td>
@@ -2207,9 +2212,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R134" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R134" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">135</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 165-166</td>
                         <td>Thevenat François</td>
                         <td></td>
@@ -2223,9 +2228,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R135" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R135" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">136</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 167</td>
                         <td>Chopard Suzanne fille de feu Pierre</td>
                         <td></td>
@@ -2238,11 +2243,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R136" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R136" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">137</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 168-169</td>
-                        <td>Leyenberg Johannes; Hans Jacob et Hans Georg; Hirschern Jacob; Peter et Anthoni
+                        <td>Leyenberg Johannes; Hans Jacob et Hans Georg; Hirschern Jacob; Peter et Antdoni
                             dits
                             &quot;les six Sarrasins&quot;</td>
                         <td></td>
@@ -2255,9 +2260,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R137" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R137" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">138</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 169-170</td>
                         <td>Paxman Antoine</td>
                         <td></td>
@@ -2269,9 +2274,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R138" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R138" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">139</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 171-173</td>
                         <td>Legeler Jean Georges</td>
                         <td></td>
@@ -2283,19 +2288,19 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R139" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R139" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">140</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 173</td>
                         <td>Hüberlin Madeleine femme de Züricher Hans Ulrich emprisonné à Bâle; Vaisse
-                            Elisabeth et
-                            Ferdinand enfants de Kesslerin Catherine (décapitée); Vaisse Christian et Marie Eve enfants
-                            de Catherine
+                            Elisabetd et
+                            Ferdinand enfants de Kesslerin Catderine (décapitée); Vaisse Christian et Marie Eve enfants
+                            de Catderine
                         </td>
                         <td></td>
                         <td></td>
                         <td>1699.11.20</td>
-                        <td>Vols<br>Sentences: - Hüberlin Madeleine, Vaisse Elisabeth et Ferdinand: fouettés
+                        <td>Vols<br>Sentences: - Hüberlin Madeleine, Vaisse Elisabetd et Ferdinand: fouettés
                             et marqués -
                             Vaisse Christian et Marie Eve: envoyés à Bâle pour la déconfrontation demandée par la ville
                         </td>
@@ -2304,11 +2309,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R140" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R140" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">141</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 175-176</td>
-                        <td>Kässlerin Anna Katharina und andere</td>
+                        <td>Kässlerin Anna Katdarina und andere</td>
                         <td></td>
                         <td></td>
                         <td>1699.11.23</td>
@@ -2318,9 +2323,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R141" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R141" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">142</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 177-179</td>
                         <td>Cuntz Marx</td>
                         <td></td>
@@ -2333,9 +2338,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R142" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R142" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">143</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 180-181</td>
                         <td>Schwarzentraub Christ</td>
                         <td></td>
@@ -2350,9 +2355,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R143" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R143" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">144</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 182-184</td>
                         <td>Schwarzentraub Christ</td>
                         <td></td>
@@ -2367,9 +2372,9 @@
                         <td>Allemand, Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R144" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R144" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">145</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 185</td>
                         <td>Louillet Louis</td>
                         <td></td>
@@ -2383,9 +2388,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R145" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R145" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">146</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 186-187</td>
                         <td>Aubry Jacob</td>
                         <td></td>
@@ -2397,9 +2402,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R146" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R146" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">147</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 188-191</td>
                         <td>Lardon Pierre</td>
                         <td></td>
@@ -2413,9 +2418,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R147" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R147" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">148</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 192</td>
                         <td>Desbrosse Thomas</td>
                         <td></td>
@@ -2427,9 +2432,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R148" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R148" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">149</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 193</td>
                         <td>Morel Jean Baptiste</td>
                         <td></td>
@@ -2442,9 +2447,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R149" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R149" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">150</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 194</td>
                         <td>N. Barbara und andere</td>
                         <td></td>
@@ -2458,11 +2463,11 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R150" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R150" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">151</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 195-196</td>
-                        <td>Jausslein Niclaus Gérard; Hauwillerin Margaretha und ihre Kinder; Mattmann Regina
+                        <td>Jausslein Niclaus Gérard; Hauwillerin Margaretda und ihre Kinder; Mattmann Regina
                             und Caspar
                         </td>
                         <td></td>
@@ -2478,9 +2483,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R151" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R151" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">152</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 197-198</td>
                         <td>Länger Adam</td>
                         <td></td>
@@ -2494,9 +2499,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R152" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R152" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">153</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 199</td>
                         <td>Chevillat Jean-Claude</td>
                         <td></td>
@@ -2508,11 +2513,11 @@
                         <td>Latin</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R153" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R153" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">154</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 200-201</td>
-                        <td>Simon Elisabeth</td>
+                        <td>Simon Elisabetd</td>
                         <td></td>
                         <td> se disant de Nods et mariée à Gilles du Gard de Noyons demeurant à Delle</td>
                         <td>1703.02.06</td>
@@ -2523,9 +2528,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R154" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R154" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">155</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 202</td>
                         <td>Gaignat Marguerite fille de Claude</td>
                         <td></td>
@@ -2539,9 +2544,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R155" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R155" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">156</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 203</td>
                         <td>Jolie Marie</td>
                         <td></td>
@@ -2554,9 +2559,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R156" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R156" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">157</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 204-205</td>
                         <td>Baidevole Marguerite</td>
                         <td></td>
@@ -2570,9 +2575,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R157" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R157" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">158</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 206</td>
                         <td>Terron Servois Joseph</td>
                         <td></td>
@@ -2584,9 +2589,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R158" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R158" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">159</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 207</td>
                         <td>Quelain Anne</td>
                         <td></td>
@@ -2601,9 +2606,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R159" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R159" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">160</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 208-209</td>
                         <td>Heinrich Zacharias</td>
                         <td></td>
@@ -2617,9 +2622,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R160" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R160" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">161</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 210-211</td>
                         <td>Tissot Hugue Baptiste</td>
                         <td></td>
@@ -2633,9 +2638,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R161" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R161" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">162</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 212-213</td>
                         <td>Kobel Philip</td>
                         <td></td>
@@ -2649,9 +2654,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R162" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R162" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">163</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 214-215</td>
                         <td>Scherrer Frantz und Gutzweiler (Gutzwiller) Hans</td>
                         <td></td>
@@ -2663,9 +2668,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R163" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R163" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">164</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 216-217</td>
                         <td>Guerry Richard</td>
                         <td></td>
@@ -2680,9 +2685,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R164" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R164" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">165</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 218-219</td>
                         <td>Guerne Abram fils de feu Jean</td>
                         <td></td>
@@ -2694,9 +2699,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R165" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R165" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">166</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 220-221</td>
                         <td>Voiroz (Voirol) Marguerite</td>
                         <td></td>
@@ -2710,9 +2715,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R166" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R166" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">167</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 222-223</td>
                         <td>Flury (Fleury) Gerie</td>
                         <td></td>
@@ -2724,9 +2729,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R167" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R167" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">168</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 225-226</td>
                         <td>Feriot Marie femme de Benoît Jean</td>
                         <td></td>
@@ -2740,9 +2745,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R168" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R168" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">169</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 224</td>
                         <td>Peignard (Pagnard) Marx</td>
                         <td></td>
@@ -2755,9 +2760,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R169" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R169" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">170</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 227-230</td>
                         <td>Domon dit Collet Abraham et Pierra; Schaffter Pierra fils de Daniel; Tendon
                             Claudat fils de
@@ -2781,9 +2786,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R170" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R170" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">171</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 231-233</td>
                         <td>La Fontaine Eustache</td>
                         <td></td>
@@ -2796,11 +2801,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R171" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R171" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">172</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 234-235</td>
-                        <td>Burnin Judith femme de Maillard Jean</td>
+                        <td>Burnin Juditd femme de Maillard Jean</td>
                         <td></td>
                         <td> de Corgémont</td>
                         <td>1707.03.29</td>
@@ -2812,9 +2817,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R172" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R172" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">173</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 236-237</td>
                         <td>Nicolet Barbelet veuve de Cugnet Hugue</td>
                         <td></td>
@@ -2826,9 +2831,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R173" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R173" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">174</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 238-239</td>
                         <td>Nicolet Barbelet veuve de Cugnet Hugue</td>
                         <td></td>
@@ -2840,9 +2845,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R174" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R174" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">175</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 240-245</td>
                         <td>François Jean Henri</td>
                         <td></td>
@@ -2858,9 +2863,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R175" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R175" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">176</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 246-247</td>
                         <td>Claude Etienne</td>
                         <td></td>
@@ -2874,9 +2879,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R176" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R176" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">177</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 248-249</td>
                         <td>Carré Claude</td>
                         <td></td>
@@ -2890,9 +2895,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R177" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R177" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">178</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 250</td>
                         <td>La Croix François</td>
                         <td></td>
@@ -2907,9 +2912,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R178" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R178" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">179</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 251-254</td>
                         <td>Grosbacher (Grossenbacher) Johannes</td>
                         <td></td>
@@ -2924,9 +2929,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R179" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R179" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">180</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 255-256</td>
                         <td>Chappuis Antoine</td>
                         <td></td>
@@ -2940,9 +2945,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R180" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R180" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">181</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 257-258</td>
                         <td>Dag(u)et dit Chovet David</td>
                         <td></td>
@@ -2955,9 +2960,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R181" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R181" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">182</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 259-260</td>
                         <td>Tüeller Frantz</td>
                         <td></td>
@@ -2971,13 +2976,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R182" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R182" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">183</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 261-262</td>
                         <td>Monot Georges</td>
                         <td></td>
-                        <td> du Russey en Bourgogne; et Pechatjean Catherine des Breuleux</td>
+                        <td> du Russey en Bourgogne; et Pechatjean Catderine des Breuleux</td>
                         <td>1709.07.23</td>
                         <td>Vol d&#39;un boeuf dans un pâturage<br>Sentence: exposition publique à
                             Saignelégier,
@@ -2987,9 +2992,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R183" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R183" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">184</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 263-264</td>
                         <td>Binder Martin</td>
                         <td></td>
@@ -3005,9 +3010,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R184" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R184" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">185</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 265-266</td>
                         <td>Son Jean Pierre valet du curé de Bourrignon</td>
                         <td></td>
@@ -3021,9 +3026,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R185" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R185" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">186</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 267-268</td>
                         <td>La Tour Claudine</td>
                         <td></td>
@@ -3037,9 +3042,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R186" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R186" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">187</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 269</td>
                         <td>Guenin Suzanne veuve de Cattin Etienne</td>
                         <td></td>
@@ -3053,9 +3058,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R187" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R187" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">188</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 270-271</td>
                         <td>Chapuis Joseph</td>
                         <td></td>
@@ -3068,9 +3073,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R188" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R188" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">189</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 272-273</td>
                         <td>Rain Marie Anne</td>
                         <td></td>
@@ -3082,9 +3087,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R189" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R189" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">190</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 274-275</td>
                         <td>Lingme (Liengme) Madeleine dite la bienfaite femme de Ganguillet Josué</td>
                         <td></td>
@@ -3098,9 +3103,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R190" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R190" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">191</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 276-277</td>
                         <td>Meyerin Anna Maria</td>
                         <td></td>
@@ -3112,9 +3117,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R191" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R191" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">192</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 278</td>
                         <td>Billechoz Joseph</td>
                         <td></td>
@@ -3129,9 +3134,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R192" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R192" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">193</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 279-281</td>
                         <td>Billechoz Joseph</td>
                         <td></td>
@@ -3147,15 +3152,15 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R193" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R193" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">194</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 282-285</td>
                         <td>Grosjean Daniel</td>
                         <td></td>
                         <td> maire de Saules</td>
                         <td>1711.02.06</td>
-                        <td>Double meurtre de sa servante Judith Frêne et de l&#39;enfant qu&#39;elle portait
+                        <td>Double meurtre de sa servante Juditd Frêne et de l&#39;enfant qu&#39;elle portait
                             (dont
                             Grosjean était le père)<br>Sentence: érection d&#39;une roue à l&#39;endroit du crime, avec
                             un poteau
@@ -3165,13 +3170,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R194" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R194" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">195</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 286-287</td>
                         <td>Dangel Hans Adam</td>
                         <td></td>
-                        <td> d&#39;Illfurth résidant à Vieux-Ferrette (Alsace)</td>
+                        <td> d&#39;Illfurtd résidant à Vieux-Ferrette (Alsace)</td>
                         <td>1711.09.05</td>
                         <td>Vols de bétail<br>Sentence (exécutée à Porrentruy le 7 septembre): mort
                             (décapitation)</td>
@@ -3180,9 +3185,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R195" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R195" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">196</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 288-289</td>
                         <td>Weissmüller Hans Georg</td>
                         <td></td>
@@ -3196,9 +3201,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R196" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R196" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">197</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 290-291</td>
                         <td>Morlette Marie</td>
                         <td></td>
@@ -3212,9 +3217,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R197" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R197" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">198</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 292-293</td>
                         <td>Biétry Maury</td>
                         <td></td>
@@ -3228,9 +3233,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R198" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R198" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">199</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 294-295</td>
                         <td>Matille (Métille) Nicolas</td>
                         <td></td>
@@ -3245,9 +3250,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R199" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R199" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">200</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 296-297</td>
                         <td>Biétry François et Antoine (frères)</td>
                         <td></td>
@@ -3263,9 +3268,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R200" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R200" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">201</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 298-299</td>
                         <td>La Croix Jacques</td>
                         <td></td>
@@ -3279,13 +3284,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R201" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R201" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">202</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 300</td>
                         <td>Vögtlerin Anna</td>
                         <td></td>
-                        <td> gebürtig von Hochwald (Kanton Solothurn)</td>
+                        <td> gebürtig von Hochwald (Kanton Solotdurn)</td>
                         <td>1712.07.12</td>
                         <td>Vols de peu d&#39;importance mais réitérés (notamment d&#39;ornements
                             d&#39;église)<br>Sentence: exposition publique, fustigation, bannissement de l&#39;Evêché de
@@ -3295,9 +3300,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R202" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R202" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">203</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 301</td>
                         <td>Amann Johannes</td>
                         <td></td>
@@ -3309,9 +3314,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R203" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R203" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">204</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 302-303</td>
                         <td>Jaquerez Henry</td>
                         <td></td>
@@ -3327,9 +3332,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R204" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R204" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">205</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 304-305</td>
                         <td>Olier François</td>
                         <td></td>
@@ -3343,13 +3348,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R205" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R205" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">206</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 306-307</td>
                         <td>Olier Jean</td>
                         <td></td>
-                        <td> de Saint-Cirq; et Saxerinne Elisabeth se disant de Neuwiller près de Strasbourg
+                        <td> de Saint-Cirq; et Saxerinne Elisabetd se disant de Neuwiller près de Strasbourg
                         </td>
                         <td>1713.03.04</td>
                         <td>Vagabondage, complicité de vol (avec François Olier), filouterie<br>Sentence:
@@ -3360,9 +3365,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R206" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R206" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">207</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 308-309</td>
                         <td>Purné Jeanne femme de Sauvain Adam</td>
                         <td></td>
@@ -3378,9 +3383,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R207" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R207" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">208</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 310</td>
                         <td>Perlet Joseph</td>
                         <td></td>
@@ -3394,9 +3399,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R208" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R208" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">209</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 311-312</td>
                         <td>Terrier Jean Georges</td>
                         <td></td>
@@ -3411,9 +3416,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R209" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R209" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">210</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 313</td>
                         <td>Füegen Franz und Frisch Christen</td>
                         <td></td>
@@ -3429,9 +3434,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R210" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R210" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">211</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 314-315</td>
                         <td>Dubois Jean Pierre</td>
                         <td></td>
@@ -3444,13 +3449,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R211" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R211" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">212</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 315-316</td>
                         <td>Hinzenin Barbara Wittwe des Hans Jacob Schwizer von Liesberg</td>
                         <td></td>
-                        <td> von Bärschwil (Kanton Solothurn)</td>
+                        <td> von Bärschwil (Kanton Solotdurn)</td>
                         <td>1714.01.15</td>
                         <td>Vol<br>Sentence: carcan, fustigation, bannissement de l&#39;Evêché de Bâle pour
                             deux ans
@@ -3462,9 +3467,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R212" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R212" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">213</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 317</td>
                         <td>Haitz Bartle</td>
                         <td></td>
@@ -3478,9 +3483,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R213" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R213" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">214</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 318</td>
                         <td>Schadell Jean</td>
                         <td></td>
@@ -3494,13 +3499,13 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R214" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R214" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">215</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 319-320</td>
                         <td>Meier Vincenz</td>
                         <td></td>
-                        <td> von Baumgarten (Solothurn)</td>
+                        <td> von Baumgarten (Solotdurn)</td>
                         <td>1714.07.03</td>
                         <td>Homicide sur la personne de Zacharias Saladin, de Gempen<br>Sentence: exposition
                             publique à
@@ -3510,9 +3515,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R215" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R215" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">216</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 321</td>
                         <td>Ittin Barbara</td>
                         <td></td>
@@ -3525,9 +3530,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R216" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R216" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">217</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 322</td>
                         <td>Gagnebin Lucrèce</td>
                         <td></td>
@@ -3539,11 +3544,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R217" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R217" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">218</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 323</td>
-                        <td>Perret Catherine veuve de Latcha Joquele</td>
+                        <td>Perret Catderine veuve de Latcha Joquele</td>
                         <td></td>
                         <td></td>
                         <td>1715.05.07</td>
@@ -3555,9 +3560,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R218" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R218" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">219</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 324-326</td>
                         <td>Schmidlin Carle</td>
                         <td></td>
@@ -3571,9 +3576,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R219" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R219" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">220</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 327-328</td>
                         <td>Helstab Joseph</td>
                         <td></td>
@@ -3587,9 +3592,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R220" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R220" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">221</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 329-330</td>
                         <td>Helstab Joseph</td>
                         <td></td>
@@ -3603,9 +3608,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R221" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R221" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">222</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 331-332</td>
                         <td>Regine Madeleine</td>
                         <td></td>
@@ -3619,9 +3624,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R222" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R222" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">223</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 333-335</td>
                         <td>Nussbaumer Jacob</td>
                         <td></td>
@@ -3634,9 +3639,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R223" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R223" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">224</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 336</td>
                         <td>Mouillet Jean Jacques</td>
                         <td></td>
@@ -3650,15 +3655,15 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R224" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R224" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">225</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 337-338</td>
                         <td>Mouillet Jean Jacques</td>
                         <td></td>
                         <td> de Courrendlin</td>
                         <td>1716.09.01</td>
-                        <td>Adultère avec sa servante et filleule Catherine Nicol, de
+                        <td>Adultère avec sa servante et filleule Catderine Nicol, de
                             Courrendlin<br>Sentence: amende
                             honorable à l&#39;église, banissement de l&#39;Evêché jusqu&#39;à rappel (remis par grâce
                             spéciale),
@@ -3668,9 +3673,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R225" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R225" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">226</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 339</td>
                         <td>Franc Jean Jacques</td>
                         <td></td>
@@ -3684,9 +3689,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R226" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R226" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">227</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 340</td>
                         <td>Bey Joseph</td>
                         <td></td>
@@ -3700,11 +3705,11 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R227" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R227" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">228</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 341-342</td>
-                        <td>Butz Lorentz (Vater); Catharina (Tochter) und Butz Martin (verwandt) von
+                        <td>Butz Lorentz (Vater); Catdarina (Tochter) und Butz Martin (verwandt) von
                             Schönenbuch</td>
                         <td></td>
                         <td></td>
@@ -3720,9 +3725,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R228" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R228" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">229</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 343-344</td>
                         <td>Erny Christoff</td>
                         <td></td>
@@ -3736,13 +3741,13 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R229" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R229" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">230</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 345-346</td>
                         <td>Gerber Hans</td>
                         <td></td>
-                        <td> von Röthenbach im Emmental (Kanton Bern)</td>
+                        <td> von Rötdenbach im Emmental (Kanton Bern)</td>
                         <td>1717.08.03</td>
                         <td>Vagabondage, nombreux vols et filouterie (avec Christoffel Marti) <br>Sentence:
                             mort</td>
@@ -3751,9 +3756,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R230" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R230" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">231</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 347-348</td>
                         <td>Castella Jean</td>
                         <td></td>
@@ -3766,9 +3771,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R231" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R231" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">232</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 349-350</td>
                         <td>Vallet Humbert</td>
                         <td></td>
@@ -3782,9 +3787,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R232" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R232" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">233</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 351-354</td>
                         <td>Combe (en fait Charbonnier) Antoine</td>
                         <td></td>
@@ -3797,9 +3802,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R233" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R233" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">234</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 355</td>
                         <td>Castella; Vallet et Charbonnier</td>
                         <td></td>
@@ -3813,9 +3818,9 @@
                         <td>Français</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R234" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R234" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">235</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 356-362</td>
                         <td>Marti Christoffel</td>
                         <td></td>
@@ -3827,11 +3832,11 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R235" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R235" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">236</div>
-                        </th>
+                        </td>
                         <td class="s3">Cod. 205A p. 361-362</td>
-                        <td class="s3">Diebelschweyl Catharina; Hundschbergerin (Honsperger) Catharina und Barbara</td>
+                        <td class="s3">Diebelschweyl Catdarina; Hundschbergerin (Honsperger) Catdarina und Barbara</td>
                         <td class="s3"></td>
                         <td class="s3"> von Eggiwil (Kanton Bern)</td>
                         <td class="s3">1717.08.23</td>
@@ -3843,11 +3848,11 @@
                         <td class="s3">Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R236" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R236" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">237</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 363-364</td>
-                        <td>Beck Anthoni</td>
+                        <td>Beck Antdoni</td>
                         <td></td>
                         <td> Schwan Georg</td>
                         <td>1717.08.28</td>
@@ -3859,9 +3864,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R237" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R237" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">238</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 365</td>
                         <td>Hassler Caspar</td>
                         <td></td>
@@ -3875,9 +3880,9 @@
                         <td>Allemand</td>
                     </tr>
                     <tr>
-                        <th id="2095287440R238" style="height: 20px;" class="row-headers-background">
+                        <td id="2095287440R238" style="height: 20px;" class="row-headers-background">
                             <div class="row-header-wrapper" style="line-height: 20px">239</div>
-                        </th>
+                        </td>
                         <td>Cod. 205A p. 366-367</td>
                         <td>Erny Christoff</td>
                         <td></td>
@@ -3890,23 +3895,107 @@
                         <td>Allemand</td>
                     </tr>
                 </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td class="identifier"></td>
-                        <td><input type="text" id="nom" name="nom"></td>
-                        <td><input type="text" id="prenom" name="prenom"></td>
-                        <td><input type="number" id="note" name="note"></td>
-                        <td><input type="submit" value="Envoyer" onclick="addRow();"></td>
-                    </tr>
-                </tfoot>
             </table>
         </div>
 
+        <script>
+            // Tri dynamique de tableau HTML
+            // Auteur : Copyright © 2015 - Django Blais
+            // Source : http://trucsweb.com/tutoriels/Javascript/tableau-tri/
+            // Sous licence du MIT.
+            function twInitTableau() {
+              // Initialise chaque tableau de classe « avectri »
+                 [].forEach.call( document.getElementsByClassName("avectri"), function(oTableau) {
+                 var oEntete = oTableau.getElementsByTagName("tr")[0];
+                 var nI = 1;
+                  // Ajoute à chaque entête (th) la capture du clic
+                  // Un picto flèche, et deux variable data-*
+                  // - Le sens du tri (0 ou 1)
+                  // - Le numéro de la colonne
+                [].forEach.call( oEntete.querySelectorAll("th"), function(oTh) {
+                  oTh.addEventListener("click", twTriTableau, false);
+                  oTh.setAttribute("data-pos", nI);
+                  if(oTh.getAttribute("data-tri")=="1") {
+                   oTh.innerHTML += "<span class=\"flecheDesc\"></span>";
+                  } else {
+                    oTh.setAttribute("data-tri", "0");
+                    oTh.innerHTML += "<span class=\"flecheAsc\"></span>";
+                  }
+                  // Tri par défaut
+                  if (oTh.className=="selection") {
+                    oTh.click();
+                  }
+                  nI++;
+                });
+              });
+            }
+            
+            function twInit() {
+              twInitTableau();
+            }
+            function twPret(maFonction) {
+              if (document.readyState != "loading"){
+                maFonction();
+              } else {
+                document.addEventListener("DOMContentLoaded", maFonction);
+              }
+            }
+            twPret(twInit);
+          
+            function twTriTableau() {
+              // Ajuste le tri
+              var nBoolDir = this.getAttribute("data-tri");
+              this.setAttribute("data-tri", (nBoolDir=="0") ? "1" : "0");
+              // Supprime la classe « selection » de chaque colonne.
+              [].forEach.call( this.parentNode.querySelectorAll("th"), function(oTh) {oTh.classList.remove("selection");});
+              // Ajoute la classe « selection » à la colonne cliquée.
+              this.className = "selection";
+              // Ajuste la flèche
+              this.querySelector("span").className = (nBoolDir=="0") ? "flecheAsc" : "flecheDesc";
+          
+              // Construit la matrice
+              // Récupère le tableau (tbody)
+              var oTbody = this.parentNode.parentNode.parentNode.getElementsByTagName("tbody")[0]; 
+              var oLigne = oTbody.rows;
+              var nNbrLigne = oLigne.length;
+              var aColonne = new Array(), i, j, oCel;
+              for(i = 0; i < nNbrLigne; i++) {
+                oCel = oLigne[i].cells;
+                aColonne[i] = new Array();
+                for(j = 0; j < oCel.length; j++){
+                  aColonne[i][j] = oCel[j].innerHTML;
+                }
+              }
+          
+              // Trier la matrice (array)
+              // Récupère le numéro de la colonne
+              var nIndex = this.getAttribute("data-pos");
+              // Récupère le type de tri (numérique ou par défaut « local »)
+              var sFonctionTri = (this.getAttribute("data-type")=="num") ? "compareNombres" : "compareLocale";
+              // Tri
+              aColonne.sort(eval(sFonctionTri));
+              // Tri numérique
+              function compareNombres(a, b) {return a[nIndex-1] - b[nIndex-1];}
+              // Tri local (pour support utf-8)
+              function compareLocale(a, b) {return a[nIndex-1].localeCompare(b[nIndex-1]);}
+              // Renverse la matrice dans le cas d’un tri descendant
+              if (nBoolDir==0) aColonne.reverse();
+              
+              // Construit les colonne du nouveau tableau
+              for(i = 0; i < nNbrLigne; i++){
+                aColonne[i] = "<td>"+aColonne[i].join("</td><td>")+"</td>";
+              }
+          
+              // assigne les lignes au tableau
+              oTbody.innerHTML = "<tr>"+aColonne.join("</tr><tr>")+"</tr>";
+            }
+            
+        
+            </script>
 
 
-        <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTooaMlOFgsLX1bpZWYYxaFOwiJhGikSqDOS8w0Gy4NZyUjA3GidzwzkjfrUGNCVg/pubhtml?widget=true&amp;headers=false"></iframe>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTooaMlOFgsLX1bpZWYYxaFOwiJhGikSqDOS8w0Gy4NZyUjA3GidzwzkjfrUGNCVg/pubhtml?widget=true&amp;headers=false" style="widtd: 1000px; height: 500px;"></iframe>
 
         <p>
             Créé le: 01/07/2022, par Bregnard Damien.
