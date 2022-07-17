@@ -41,7 +41,7 @@
                         <li><a href="#">Infographie</a>
                     </ul>
                 </li>
-                <li><a href="#">Liens</a></li>
+                <!-- <li><a href="liens.html">Liens</a></li> -->
             </ul>
             </nav>
         </header>
@@ -54,8 +54,8 @@
                 <h3>Qu'est-ce que le HTR (<i>handwriting text recognition</i>)?</h3>
                 <p>
                     Le HTR est une sous-catégorie de l'OCR (<i>optical character recognition</i>), une procédure qui permet 
-                    de récupérer le texte imprimé à partir d'une photo de ce dernier. 
-                    Si vous pouvez copier le texte d'un livre numérisé sur GoogleBooks, par exemple, c'est grâce à l'utilisation de l'OCR 
+                    de récupérer le texte imprimé sur la photo d'une source. 
+                    Si vous pouvez copier le texte d'un livre numérisé sur Google Books, par exemple, c'est grâce à l'utilisation de l'OCR 
                     qui transforme une page numérisée en texte interrogeable. 
                     Le HTR est la procédure qui permet de lire un manuscrit et de transformer une numérisation en texte éditable. <br/>
                     Pour en savoir plus: 
@@ -70,30 +70,29 @@
                 <h3>Comment utiliser le HTR? </h3>
                 <figure style="float:right">
                     <img class="intext" src="photos/interface_fondue.png">
-                    <figcaption class="intext">L'interface de transcription de FoNDUE (e-Scriptorium).</figcaption>
+                    <figcaption>L'interface de transcription de FoNDUE (e-Scriptorium).</figcaption>
                 </figure>
                 <p>
                     Plusieurs outils permettent de pratiquer la reconnaissance de l'écriture manuscrite. 
                     Le plus populaire est sans doute <a href="https://readcoop.eu/transkribus">Transkribus</a> qui permet de se familiariser facilement à cette technologie grâce à une interface web 
                     et à un logiciel plus complet qui permet une expérience utilisateur plus aboutie. 
-                    L'écosystème Transkribus permet d'utiliser l'interface pour créer ses propres transcription, 
-                    de transcrire automatiquement grâce des modèles publics, mais également de développer des modèles spécifiques aux données de l'utilisateur·trice.
+                    L'écosystème Transkribus permet d'utiliser l'interface pour créer ses propres transcriptions, 
+                    de transcrire automatiquement grâce des modèles publics, mais également de développer des modèles spécifiques, 
+                    adaptés aux données de l'utilisateur·trice.
                     N'importe quel·le utilisateur·trice peut ouvrir un compte et bénéficier de crédits gratuits. <br/>
                     Pour en savoir plus: 
                     <ul>
-                        <li><a href="https://readcoop.eu/transkribus">Découvrir l'écosystème Transkribus et s'inscrire</a></li>
                         <li><a href="https://readcoop.eu/transkribus/howto/use-transkribus-in-10-steps/">Débuter avec Transkribus en 10 étapes</a></li>
                     </ul>
-                    Les chercheur·euses les plus motivés se tourneront vers le moteur HTR <i>open source</i>Kraken 
+                    Les chercheur·euses les plus motivés se tourneront vers le moteur HTR <i>open source</i> <a href="https://kraken.re/master/index.html">Kraken</a> 
                     qui peut être utilisé à travers l'interface e-Scriptorium ou directement en lignes de commandes. 
-                    Si le coût d'entrée pour accéder à cet outil sont plus élevés, les gains au niveau de la recherche sont également plus importants: 
+                    Si le coût d'entrée pour accéder à cet outil est plus élevé, les gains au niveau de la recherche sont également plus importants: 
                     les modèles développés grâce à Kraken peuvent s'échanger en dehors d'un système fermé 
                     et il est possible d'entraîner des modèles avec plus de finesse en modifiant l'architecture neuronale d'apprentissage. <br/>
-                    Toutefois, pour le moment, les services e-Scriptorium ne sont pas encore ouvert au grand public. Le moteur Kraken, quant à lui, peut être 
-                    déployer sur un ordinateur privé grâce à Python.<br/>
+                    Toutefois, pour le moment, les services e-Scriptorium ne sont pas encore ouverts au grand public. 
+                    Le moteur Kraken, quant à lui, peut être déployer sur un ordinateur privé grâce à Python.<br/>
                     Pour en savoir plus: 
                     <ul>
-                        <li><a href="https://kraken.re/master/index.html">Site web de Kraken</a></li>
                         <li><a href="https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium">Prendre en main e-Scriptorium</a></li>
                         <li><a href="https://test2.fondue.unige.ch">Accéder à l'instance genevoise d'e-Scriptorium: FoNDUE</a></li>
                     </ul>
@@ -104,22 +103,22 @@
             <div>
                 <h3>Le modèle Farine</h3>
                 <p>
-                    Dans le cadre du projet "Crimes et Châtiments", un modèle a été développé pour transcrire les textes écrits par le Prévot Henri Farine, 
-                    actif entre 1580-1618. On compte plus de 3'500 documents de sa main dans les fonds des Archives de l'ancien Évêché de Bâle. 
+                    Dans le cadre du projet "Crimes et Châtiments", un modèle a été développé pour transcrire les textes écrits par le prévot Henri Farine, 
+                    actif entre 1580 et 1618. On compte plus de 3'500 documents de sa main dans les fonds des Archives de l'ancien Évêché de Bâle. 
                 </p>
 
                 <p>
                     L'écriture du Prévot Farine est une cursive française assez régulière. 
                     On note toutefois qu'à partir de 1610, les &#60;e&#62; finaux sont accentués et qu'elle emprunte 
-                    quelques traits <i>Kurrentschift</i> germanique (&#60;r&#62; minuscule ou diacritique occasionnel sur le &#60;u/v&#62;).
+                    quelques traits <i>Kurrentschrift</i> germanique (&#60;r&#62; minuscule ou signe diacritique occasionnel sur le &#60;u/v&#62;).
                 </p>
 
                 <aside>
                     <figure>
-                        <img src="photos/B_168_15-10-3_0001_perpetrez.jpg" style="width:500px"/>
+                        <img class="intext" src="photos/B_168_15-10-3_0001_perpetrez.jpg" style="width:500px"/>
                         <figcaption style="width: 500px;">En rouge, &#60;r&#62; minuscule ("perpetrez"; "Par"); 
                                 en vert, signe diacritique sur &#60;u/v&#62; (nom de famille "fouvent") ; 
-                                en jaune, différents &#60;s&#62;x; 
+                                en jaune, différents &#60;s&#62;; 
                                 en violet, abréviations "par" et "present". 
                                 <br/>AAEB B 168/15-10.3 p. 1</figcaption>
                     </figure>

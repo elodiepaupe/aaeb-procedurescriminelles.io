@@ -1,12 +1,28 @@
 /* Classe obligatoire pour les flèches */
+#tab{
+  overflow: auto;
+  height: 500px;
+}
+
 table{
     font-size: small;
+}
+
+#tabl thead th {
+  position: sticky;
+  top: 0;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
   }
+
+th{
+  position: sticky; 
+  top: 0;
+}
+
 
 .flecheDesc {
     width: 0; 

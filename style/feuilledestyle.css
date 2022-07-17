@@ -1,6 +1,6 @@
 /* Tout le document */ 
 html{
-    max-width:1000px;
+    max-width:auto;
     min-width: 650px;
     margin: auto;
     font-family: Verdana, Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
@@ -116,6 +116,8 @@ header{
 /* Corps de texte */
 
 body{
+    max-width: 1000px;
+    margin: auto; 
     background-color:#fafafa;
     color:grey;
     overflow-x:scroll;
@@ -175,15 +177,19 @@ figure{
 img{
     max-width: 500px; 
 }
-/*
-img:hover{
-    -webkit-transform: scale(2,2);
-}
-*/
+
 .intext{
     width:400px;
     margin:10px;
 }
+.intext:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}  
 
 figcaption{
    color: rgb(73 135 212);
@@ -193,9 +199,8 @@ figcaption{
 }
 
 iframe{
-    margin: 15px 0;
-    width: 1000px;
-    height: 500px;
+    width: 1020px; /* Je suis désolée pour ça. */
+    height:500px;
 }
 
 /* En-tête */ 
@@ -214,7 +219,6 @@ footer{
     text-align: center;
     margin-top: 2cm;
     position:sticky;
-    left: 0;
-    bottom: 0;
+    bottom:0;
     width: 100%;
 }
