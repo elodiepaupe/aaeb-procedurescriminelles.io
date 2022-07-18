@@ -203,6 +203,56 @@ iframe{
     height:500px;
 }
 
+/* Salle de lecture virtuelle */
+
+.lecture{
+    display: block;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    margin-bottom: 12px;
+}
+
+.lecture_transcription{
+    display: block;
+    float: left;
+    padding:12px; 
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+    line-height: 150%;
+    color: rgb(73 135 212);
+}
+
+.lecture_image, .img-zoom-container{
+    display: block;
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+}
+
+/* Zoom dans image de lecture */ 
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 80px;
+    height: 40px;
+    border-color: rgb(73 135 212);
+  }
+  
+  .img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 50%;
+    height: 250px;
+    float: right;
+  }
+
 /* En-tête */ 
 #logo{
     display: block;
