@@ -24,5 +24,7 @@ Le contenu des [éditions](lecture.html) est généré à partir des fichiers al
 
 L'architecture html et feuille de style css ont été réalisés par mes soins. Lorsque j'ai emprunté du code à des tiers, un commentaire le signale.
 
+Le site est accessible à cette adresse [https://aaeb-porrentruy.github.io/](https://aaeb-porrentruy.github.io/aaeb-procedurescriminelles.io/index.html)
+
 Chandolin, le 19 juillet 2022. 
 
