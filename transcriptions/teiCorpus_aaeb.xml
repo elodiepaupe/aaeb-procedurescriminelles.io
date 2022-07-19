@@ -1,0 +1,102 @@
+<teiCorpus version="3.3.0" 
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Procédures criminelles</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Première version électronique</edition>
+                <respStmt>
+                    <resp> Cheffe de projet </resp>
+                    <name xml:id="EP" type="participante">Élodie Paupe</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <authority>AAEB</authority>
+                <availability status="restricted" n="CC-BY-NC-SA">
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                    <p>Creative Commons Attribution 4.0 CC BY-NC-SA 4.0 FR</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <ab>À compléter</ab>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <ab>blabla</ab>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Français</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change type="creation" resp="#EP">
+                <date when="2022-07-08"/>Création du fichier.</change>
+        </revisionDesc>
+    </teiHeader>
+
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-10-3_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-10-3_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-10-3_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-10-3_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-1_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-1_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-1_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0005.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0006.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0007.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0008.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0009.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0010.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-2_0011.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-3_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-3_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-3_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-3_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-4_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-4_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-4_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-2-4_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-1_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-2_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-2_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-2_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-2_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-3_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-3_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-3_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-3_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-4_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-4_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-4_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-4_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-5_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-5_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-23-5_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0004.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0005.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0006.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0007.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0008.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0009.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0010.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-2_0012.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-4_0001.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-4_0002.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-4_0003.xml"/>
+        <xi:include href="../../corpus_prevot_farine_fr/B168/B_168_15-9-4_0004.xml"/>
+
+    
+
+
+</teiCorpus>

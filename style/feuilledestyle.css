@@ -8,6 +8,8 @@ html{
 
 /* Menu principal */
 
+/* Menu principal */
+
 header{
     padding-bottom: 70px;
 }
@@ -181,6 +183,7 @@ img{
 .intext{
     width:400px;
     margin:10px;
+    margin-right:24px;
 }
 .intext:hover{
     -webkit-transform: scale(1.2);
@@ -199,9 +202,110 @@ figcaption{
 }
 
 iframe{
-    width: 1020px; /* Je suis désolée pour ça. */
+    width: 1010px; /* Je suis désolée pour ça. */
     height:500px;
 }
+
+.salle_de_lecture{
+    width: 1000px; /* Je suis désolée pour ça. */
+    height:500px;
+}
+
+/* menu déroulant salle de lecture */
+
+#salle_lecture {
+    display: block;
+    width: 100%;
+    position: absolute;
+    float:left;
+    margin:0 auto;
+}
+
+#salle_lecture ul{
+    list-style:none;
+    
+}
+
+#salle_lecture ul a{
+    display:block;
+	text-decoration:none;
+}
+
+#salle_lecture ul li{
+    float: left;
+    position: relative;
+    width: 30%;
+    text-align: left;
+
+}
+
+
+#salle_lecture ul li:hover a{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+#salle_lecture ul li a
+{
+	height: auto;
+    line-height: auto;
+}
+
+#salle_lecture ul ul{
+    display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+}
+
+#salle_lecture ul ul li
+{
+	float:none;
+	width:100%; 
+    height: auto;
+    line-height: auto;
+}
+
+#salle_lecture ul ul a
+{
+	line-height:200%;
+}
+
+#salle_lecture ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#salle_lecture ul li:hover > ul
+{
+	display:block
+}
+
+#salle_lecture ul li ul li a
+{
+	height: auto;
+    line-height: auto;
+    background: white;
+}
+
+#salle_lecture ul li ul li:hover a
+{
+	background: white;
+    color: orange;
+    border: 2px solid gold;
+}
+
+.deroulant a{
+    color:orange; 
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
 
 /* Salle de lecture virtuelle */
 
@@ -220,7 +324,7 @@ iframe{
     padding:12px; 
     width: 50%;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     line-height: 150%;
     color: rgb(73 135 212);
 }
@@ -232,6 +336,12 @@ iframe{
     width: 50%;
     height: 100%;
     overflow: scroll;
+}
+
+.bouton_lecture{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
 }
 
 /* Zoom dans image de lecture */ 
