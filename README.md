@@ -7,10 +7,10 @@ Le site web réalisé dans le cadre de ce cours s'insère dans le projet-pilote 
 
 ## Retour sur le projet
 ### Calendrier 
-<img src="photos/AAEB-11.jpeg" style="float:right;width:100px;">
+<img src="photos/AAEB-11.jpeg" style="align:right; float:right; width:200px;">
 Après une première séance qui a permis de clarifier le contenu à faire figurer dans le site –  la communication autour du projet, édition numérique et médiation –, une seconde séance a eu lieu avec les responsables du projet "Crimes et châtiments" des Archives de l'ancien Évêché de Bâle. Les projets de mise en page griffonnés ont été présentés lors de cette séance. Ils ont été amendés par les participants qui ont également fait part de nouveaux besoins: 
-* abécédaire;
-* base de données. 
+- abécédaire;
+- base de données. 
 
 Le site en développement a fait l'objet d'un tour de correction avant mi-juillet 2022. 
 ### Chaîne de traitement
